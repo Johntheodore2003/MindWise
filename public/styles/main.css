@@ -87,7 +87,7 @@ nav ul li a{
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
-    height: 200px;
+    /* height: 300px; */
     width: 40%;
     font-weight: bold;
     line-height: 25px;
@@ -98,7 +98,7 @@ nav ul li a{
     position: absolute;
     height: 400px;
     width: 400px;
-    bottom: 100px;
+    top: 20%;
     right: 200px;
 }
 

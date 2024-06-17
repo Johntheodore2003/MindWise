@@ -1,0 +1,294 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* ________________________________________NavBar________________________________________________ */
+
+.navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    padding: 10px 20px 7px 20px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 50px;
+}
+
+.nav-logo{
+    margin-left: 10px;
+    margin-right: 80px;
+    cursor: pointer;
+}
+
+.nav-item {
+    margin-right: 80px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-right {
+    margin-right: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    /* border: 1px solid black; */
+    background-color: rgb(240, 237, 237);
+    margin-right: 10px;
+    border-radius: 20px;
+    padding: 1px 8px;
+    width: 300px;
+    height: 25px;
+}
+.search-bar i{
+    margin-top: 3px;
+
+}
+
+#search-area{
+    /* border: 1px solid rgb(232, 21, 21); */
+    width: 90%;
+    height: 80%;
+    outline: none;
+    border-radius: 50;
+    display: inline;
+    justify-content: center;
+    overflow: hidden;
+    background-color: transparent;
+    border: none;
+}
+
+.profile-icon{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.profile-icon img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.search-bar,
+.notification-icon,
+.profile-icon {
+    margin-left: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Style The Dropdown Button */
+.dropbtn {
+  /* margin-right: 80px; */
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.drop-a{
+  margin-right: 0px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ............................NAV END.................... */
+
+.main{
+    background-color: lightgrey;
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto 40px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.main h1{
+    font-size: 25px;
+    font-weight: 600;
+    color: #001e4d;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+
+.survey{
+    padding: 20px 0;
+}
+
+.survey h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #001e4d;
+    font-weight: 600;
+}
+
+.btn{
+    background-color: #F0EEF6;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    /* border-radius: 1px solid #fff; */
+    padding: 12px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.btn:hover{
+    background-color: #6B4DE5;
+    color: #fff;
+    /* border: none; */
+    padding: 12px;
+}
+
+#next-btn{
+    background-color: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 12px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+}
+
+.result-container {
+    /* background-color: #f8f9fa; */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.result-container p {
+    font-size: 25px;
+    margin-bottom: 25px;
+    color: #001e4d;
+}
+
+.result-container li{
+    margin-left: 15px;
+    margin-top: 10px;
+    color: #001e4d;
+}
+
+/* footer */
+
+.footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }

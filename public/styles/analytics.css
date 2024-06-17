@@ -1,0 +1,494 @@
+@import 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet';
+
+:root {
+    --dk-gray-100: #e5e5e6;
+    --dk-gray-200: #e5e5e6;
+    --dk-gray-300: #e5e5e6;
+    --dk-gray-400: #e5e5e6;
+    --dk-gray-500: #e5e5e6;
+    --dk-gray-600: #e5e5e6;
+    --dk-gray-700: #e5e5e6;
+    --dk-gray-800: #e5e5e6;
+    --dk-gray-900: #e5e5e6;
+    --dk-dark-bg: #e5e5e6;
+    --dk-darker-bg: #e5e5e6;
+    --navbar-bg-color: #e5e5e6;
+    --sidebar-bg-color: #e5e5e6;
+    --sidebar-width: 250px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--dk-darker-bg);
+    font-size: .925rem;
+}
+
+
+
+
+
+
+
+/* Style The Dropdown Button */
+.dropbtn {
+  /* margin-right: 80px; */
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.drop-a{
+  margin-right: 0px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+#wrapper {
+    margin-left: var(--sidebar-width);
+    transition: all .3s ease-in-out;
+}
+
+#wrapper.fullwidth {
+    margin-left: 0;
+}
+
+
+
+/** --------------------------------
+ -- Sidebar
+-------------------------------- */
+.sidebar {
+    background-color: var(--sidebar-bg-color);
+    width: var(--sidebar-width);
+    transition: all .3s ease-in-out;
+    transform: translateX(0);
+    z-index: 9999999
+}
+
+.sidebar .close-aside {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    cursor: pointer;
+    color: #000000;
+}
+
+.sidebar .sidebar-header {
+    border-bottom: 1px solid #2a2b3c
+}
+
+.sidebar .sidebar-header h5 a {
+    color: black;
+}
+
+.sidebar .sidebar-header p {
+    color: black;
+    font-size: .825rem;
+}
+
+.sidebar .search .form-control~i {
+    color: black;
+    right: 40px;
+    top: 22px;
+}
+
+.sidebar>ul>li {
+    padding: .7rem 1.75rem;
+}
+
+.sidebar ul>li>a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Start numbers */
+.sidebar ul>li>a>.num {
+    line-height: 0;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 0px 5px
+}
+
+.sidebar ul>li>i {
+    font-size: 18px;
+    margin-right: .7rem;
+    color: black;
+}
+
+.sidebar ul>li.has-dropdown>a:after {
+    content: '\eb3a';
+    font-family: unicons-line;
+    font-size: 1rem;
+    line-height: 1.8;
+    float: right;
+    color: black;
+    transition: all .3s ease-in-out;
+}
+
+.sidebar ul .opened>a:after {
+    transform: rotate(-90deg);
+}
+
+/* Start dropdown menu */
+.sidebar ul .sidebar-dropdown {
+    padding-top: 10px;
+    padding-left: 30px;
+    display: none;
+}
+
+.sidebar ul .sidebar-dropdown.active {
+    display: block;
+}
+
+.sidebar ul .sidebar-dropdown>li>a {
+    font-size: .85rem;
+    padding: .5rem 0;
+    display: block;
+}
+
+/* End dropdown menu */
+
+.show-sidebar {
+    transform: translateX(-270px);
+}
+
+@media (max-width: 767px) {
+    .sidebar ul>li {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .sidebar .search {
+        padding: 10px 0 10px 30px
+    }
+}
+
+
+
+
+/** --------------------------------
+ -- welcome
+-------------------------------- */
+.welcome {
+    color: black;
+}
+
+.welcome .content {
+    background-color: var(--dk-dark-bg);
+    border-radius: 12px;
+}
+
+.welcome p {
+    color: black;
+}
+
+
+
+
+/** --------------------------------
+ -- Statistics
+-------------------------------- */
+.statistics {
+    color: black;
+}
+
+.statistics .box {
+    background-color: var(--dk-dark-bg);
+    border-radius: 12px;
+}
+
+.statistics .box i {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.statistics .box p {
+    color: black;
+}
+
+
+
+
+/** --------------------------------
+ -- Charts
+-------------------------------- */
+/* .charts .chart-container {
+     background-color: var(--dk-dark-bg); 
+} */
+
+.charts .chart-container h3 {
+    text-align: center;
+    color: black;
+}
+.chart-container img{
+    border-radius: 26px;
+    height: 600px;
+    width: 600px;
+}
+
+
+
+
+/** --------------------------------
+ -- users
+-------------------------------- */
+.admins .box .admin {
+    background-color: var(--dk-dark-bg);
+}
+
+.admins .box h3 {
+    color: black;
+}
+
+.admins .box p {
+    color: black;
+}
+
+
+
+
+/** --------------------------------
+ -- statis
+-------------------------------- */
+.statis {
+    color: black;
+}
+
+.statis .box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.statis .box h3:after {
+    content: "";
+    height: 2px;
+    width: 70%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.12);
+    display: block;
+    margin-top: 10px;
+}
+
+.statis .box i {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    font-size: 22px;
+    padding: 15px;
+    top: -25px;
+    left: -25px;
+    background-color: rgba(255, 255, 255, 0.15);
+    line-height: 60px;
+    text-align: right;
+    border-radius: 50%;
+}
+
+
+
+
+
+.main-color {
+    color: black;
+}
+
+/** --------------------------------
+ -- Please don't do that in real-world projects!
+ -- overwrite Bootstrap variables instead.
+-------------------------------- */
+
+.navbar {
+    background-color: var(--navbar-bg-color) !important;
+    border: none !important;
+}
+
+.navbar .dropdown-menu {
+    right: auto !important;
+    left: 0 !important;
+}
+
+.navbar .navbar-nav>li>a {
+    color: black;
+    line-height: 55px !important;
+    padding: 0 10px !important;
+}
+
+.navbar .navbar-brand {
+    color: black;}
+
+.navbar .navbar-nav>li>a:focus,
+.navbar .navbar-nav>li>a:hover {
+    color: black;}
+
+.navbar .navbar-nav>.open>a,
+.navbar .navbar-nav>.open>a:focus,
+.navbar .navbar-nav>.open>a:hover {
+    background-color: transparent !important;
+    color: black;}
+
+.navbar .navbar-brand {
+    line-height: 55px !important;
+    padding: 0 !important
+}
+
+.navbar .navbar-brand:focus,
+.navbar .navbar-brand:hover {
+    color: black;}
+
+.navbar>.container .navbar-brand,
+.navbar>.container-fluid .navbar-brand {
+    margin: 0 !important
+}
+
+@media (max-width: 767px) {
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: 15px !important;
+    }
+
+    .navbar .navbar-nav>li>a {
+        padding-left: 0 !important;
+    }
+
+    .navbar-nav {
+        margin: 0 !important;
+    }
+
+    .navbar .navbar-collapse,
+    .navbar .navbar-form {
+        border: none !important;
+    }
+}
+
+.navbar .navbar-nav>li>a {
+    float: left !important;
+}
+
+.navbar .navbar-nav>li>a>span:not(.caret) {
+    background-color: #e74c3c !important;
+    border-radius: 50% !important;
+    height: 25px !important;
+    width: 25px !important;
+    padding: 2px !important;
+    font-size: 11px !important;
+    position: relative !important;
+    top: -10px !important;
+    right: 5px !important
+}
+
+.dropdown-menu>li>a {
+    padding-top: 5px !important;
+    padding-right: 5px !important;
+}
+
+.navbar .navbar-nav>li>a>i {
+    font-size: 18px !important;
+}
+
+
+
+
+/* Start media query */
+
+@media (max-width: 767px) {
+    #wrapper {
+        margin: 0 !important
+    }
+
+    .statistics .box {
+        margin-bottom: 25px !important;
+    }
+
+    .navbar .navbar-nav .open .dropdown-menu>li>a {
+    color: black;    }
+
+    .navbar .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: black;    }
+
+    .navbar .navbar-toggle {
+        border: none !important;
+        color: black;
+        font-size: 18px !important;
+    }
+
+    .navbar .navbar-toggle:focus,
+    .navbar .navbar-toggle:hover {
+        background-color: transparent !important
+    }
+}
+
+
+::-webkit-scrollbar {
+    background: transparent;
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #747fe6;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* ________________________________________Repair_____________________________________________________________ */
+
+.score-circle{
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+    width: 65px;
+    height: 65px;
+    background-color:#988bb3
+}

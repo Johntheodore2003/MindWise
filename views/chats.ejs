@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat-in Messenger</title>
+    <link rel="stylesheet" href="styles/chats.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/logo/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <div class="logo"> <img src="images/img/bed66fc55b7dcc5eb23bf385bdf7401a.png" style="width: 30px; height: 30px; border-radius: 50%;" alt=""> </div>
+            <div class="nav-logo" style="font-family: 'Caveat'; font-size: 24px;">MindWise</div>
+            <div class="nav-item"><a href="">Home</a></div>
+            <div class="nav-item"><a href="/explore">Explore</a></div>
+            <div class="nav-item"><a href="/chatbot">Service</a></div>
+            <div class="nav-item"><a href="">Analytics</a></div>
+        </div>
+        <div class="navbar-right">
+            <div class="search-bar"><input type="search" placeholder="Search" name="Seacrch" id="search-area"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="notification-icon"><i class="fa-solid fa-bell" style="margin-right: 10px;"></i></div>
+            <div class="profile-icon"><img src="images/img/bed66fc55b7dcc5eb23bf385bdf7401a.png" alt=""></div>
+        </div>
+    </nav>
+    <hr>
+
+    <section class="chat__section">
+    <div class="brand">
+        <img height="40" src="/wassup.png" alt="">
+        <h1>Chat</h1>
+    </div>
+    <div class="message__area"></div>
+    <!-- <div>
+        <textarea style="float: left;" id="textarea" placeholder="Write a message..."></textarea>
+        <span style="float: right;" class="material-symbols-outlined">
+            videocam
+        </span>
+    </div> -->
+
+    <div class="video-icon" style="display: flex; ">
+        <textarea style="flex-grow: 1;"  id="textarea" placeholder="Write a message..."></textarea>
+        <span style="flex-shrink: 1;" class="material-symbols-outlined"><a style="text-decoration: none; color: black;" href="https://meet.google.com/odz-yjzj-fwp">videocam</a></span>
+      </div>
+</section>
+
+    <script src="https://kit.fontawesome.com/abbae87c93.js" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+
+</html>

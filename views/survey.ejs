@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="/styles/survey.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/logo/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- .............START NAV SECTION...................... -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <div class="logo"> <img src="images/img/bed66fc55b7dcc5eb23bf385bdf7401a.png" style="width: 30px; height: 30px; border-radius: 50%;" alt=""> </div>
+            <div class="nav-logo" style="font-family: 'Caveat'; font-size: 24px;">MindWise</div>
+            <div class="nav-item"><a href="">Home</a></div>
+            <div class="nav-item"><a href="/explore">Explore</a></div>
+            <div class="dropdown nav-item">
+                <a href=""><button class="dropbtn">Services</button></a>
+                <div class="dropdown-content">
+                  <a href="/chatbot">ChatBot</a>
+                  <a href="/survey">Survey</a>
+              </div>
+            </div>
+            <div class="nav-item"><a href="/analytics">Analytics</a></div>
+        </div>
+        <div class="navbar-right">
+            <div class="search-bar"><input type="search" placeholder="Search" name="Seacrch" id="search-area"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="notification-icon"><i class="fa-solid fa-bell" style="margin-right: 10px;"></i></div>
+            <div class="profile-icon"><a href="/login"><img src="images/img/bed66fc55b7dcc5eb23bf385bdf7401a.png" alt=""></a></div>
+        </div>
+    </nav>
+    <hr>
+
+    <!-- ................END NAV SECTION......................... -->
+
+    <div class="main">
+        <h1>User Survey</h1>
+        <div class="survey">
+            <h2 id="question">Here goes the question</h2>
+            <div id="answer-btns">
+                <button class="btn" onclick="selectAnswer(0)">answer1</button>
+                <button class="btn" onclick="selectAnswer(1)">answer2</button>
+                <button class="btn" onclick="selectAnswer(2)">answer3</button>
+                <button class="btn" onclick="selectAnswer(3)">answer4</button>
+            </div>
+            <button id="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+        <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+        
+        <div class="row">
+        <ul>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Career</a></li>
+        </ul>
+        </div>
+        
+        <div class="row">
+        MindWise Copyright ©️ 2024 DEXTERIX - All rights reserved || Designed By: Hope-Tech 
+        </div>
+        </div>
+        </footer>
+
+        <script>(function(w, d) { w.CollectId = "652cd653b8a0d51225e59845"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+        <script src="https://kit.fontawesome.com/abbae87c93.js" crossorigin="anonymous"></script>
+    <script src="survey.js"></script>
+</body>
+</html>

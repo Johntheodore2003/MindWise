@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/styles/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="/images/logo/Logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form name="myForm" onsubmit="validationForm()" action="/home" method="post">
+        <div class="container"> 
+            <div class="center-container">
+                <h1 class="login-head">Login</h1>
+                <input type="text" id="Email" name="Email" placeholder="Email">
+                <input type="password" id="Password" name="Password" placeholder="Password">
+                <div class="Forgot-password">
+                    <span><a href="#">Forgot Password?</a></span>
+                </div>
+                <div class="login">
+                    <button type="submit" class="Login-btn">Login</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script>(function(w, d) { w.CollectId = "652cd653b8a0d51225e59845"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+    <script src="/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,393 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 50px;
+}
+
+.nav-logo{
+    margin-left: 10px;
+    margin-right: 80px;
+    cursor: pointer;
+}
+
+.nav-item {
+    margin-right: 80px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-right {
+    margin-right: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    /* border: 1px solid black; */
+    background-color: rgb(240, 237, 237);
+    margin-right: 10px;
+    border-radius: 20px;
+    padding: 1px 8px;
+    width: 300px;
+    height: 25px;
+}
+.search-bar i{
+    margin-top: 3px;
+
+}
+
+#search-area{
+    /* border: 1px solid rgb(232, 21, 21); */
+    width: 90%;
+    height: 80%;
+    outline: none;
+    border-radius: 50;
+    display: inline;
+    justify-content: center;
+    overflow: hidden;
+    background-color: transparent;
+    border: none;
+}
+
+.profile-icon{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.profile-icon img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.search-bar,
+.notification-icon,
+.profile-icon {
+    margin-left: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Style The Dropdown Button */
+.dropbtn {
+  /* margin-right: 80px; */
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.drop-a{
+  margin-right: 0px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.banner .banner-img{
+    width: 100%;
+    height: 60vh;
+    padding-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+.explore-yoga{
+    background-color: rgba(196, 192, 188, 0.279);
+}
+
+h1 {
+    font-family: Arial;
+    color: black;
+    padding: 1rem;
+   }
+   
+   .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    overflow: hidden;
+    scroll-behavior: smooth;
+   }
+   .wrapper section {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    margin: 20px 0;
+   }
+   .wrapper section .item {
+    padding: 0 2px;
+    transition: 250ms all;
+   }
+   .wrapper section .item:hover {
+    margin: 0 40px;
+    transform: scale(1.2);
+   }
+   .wrapper section .arrow__btn {
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    font-size: 6em;
+    background: black;
+    width: 80px;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+   }
+   .wrapper section .arrow__btn:nth-of-type(1) {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+   }
+   .wrapper section .arrow__btn:nth-of-type(2) {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+   }
+   
+   @media only screen and (max-width: 600px) {
+    .arrow__btn {
+    display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}
+
+/** videoModal **/
+#videoModal {
+  border-radius: 0;
+  width: 870px;
+  margin:auto;
+}
+  #videoModal .modal-header {
+    background: #000;
+    border: 0;
+    color: #fff;
+    position: relative;
+	height:35px; 
+    margin-top: 15%;
+}
+#videoModal .modal-header h3 {
+    font-size: 18px;
+    line-height: 22px;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:5px;
+}
+#videoModal .modal-body {
+    height: 489px;
+    padding: 0;
+    max-height: none;
+    overflow: hidden;
+}
+#videoModal .modal-footer:empty {
+    display: none !important; 
+}
+#videoModal .close {
+    background: #DB00B8;
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    text-shadow: none;
+    top: 0;
+    width: 38px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   .footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+}
+
+
+
+
+
+
+
+
